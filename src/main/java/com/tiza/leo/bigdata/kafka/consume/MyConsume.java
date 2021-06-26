@@ -37,7 +37,7 @@ public class MyConsume {
         prop.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
 
         //配置消费者组
-        prop.put(ConsumerConfig.GROUP_ID_CONFIG, "bigdata");
+        prop.put(ConsumerConfig.GROUP_ID_CONFIG, "consumerGroupConfigTest01");
 
     }
 
@@ -60,5 +60,6 @@ public class MyConsume {
         }
         //关闭链接
         //consumer.close();
+
     }
 }
